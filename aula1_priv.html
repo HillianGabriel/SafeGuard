@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeGuard - Aula 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="safe.css">
+</head>
+<body style="background-color: var(--bg-preto);">
+
+    <div id="nav-container">
+        <a href="SafeGuard.html" class="logo-link">
+            <i id="shield-icon" class="bi bi-shield fs-3"></i>
+            <span class="logo-text">SafeGuard</span>
+        </a>
+        <div class="nav-menu">
+            <a href="SafeGuard.html" class="nav-link">Início</a>
+            <a href="SafeGuard.html#trilhas" class="nav-link">Trilhas</a>
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-4 mb-5" style="max-width: 1300px;">
+        
+        <a href="Privacidade.html" class="back-link mb-4 d-inline-flex">
+            <i class="bi bi-arrow-left"></i> Voltar à Trilha
+        </a>
+
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+            <div style="color: #94a3b8; font-size: 14px;">
+                <i class="bi bi-clock me-1"></i> 10 min de leitura <span class="mx-2">•</span> Aula 1 de 2
+            </div>
+            <button id="btn-marcar-concluido" data-aula="t3_aula1_concluida" class="btn-concluir bg-transparent">
+                <i class="bi bi-circle me-1"></i> Marcar como concluída
+            </button>
+        </div>
+
+        <h1 class="fw-bold mb-4 text-white">O que é Privacidade Digital?</h1>
+        
+        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+
+        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm" style="border: 1px solid rgba(255,255,255,0.1);">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lMz50z_9uJE?si=6624VQHOnFlbm5kr" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+
+        <div class="article-content mb-5">
+            <h4>O que é Privacidade Digital?</h4>
+            <p>Privacidade digital é o direito de controlar quais informações pessoais você compartilha online e como elas são utilizadas.</p>
+
+            <h4>Seus dados são valiosos</h4>
+            <p>Empresas coletam dados sobre você para:</p>
+            <ul>
+                <li>Direcionar anúncios personalizados</li>
+                <li>Treinar algoritmos de inteligência artificial</li>
+                <li>Vender para terceiros</li>
+                <li>Criar perfis comportamentais</li>
+            </ul>
+
+            <h4>O que é coletado?</h4>
+            <ul>
+                <li><strong>Dados de navegação</strong> — sites visitados, tempo gasto, cliques</li>
+                <li><strong>Dados de localização</strong> — GPS, Wi-Fi, antenas de celular</li>
+                <li><strong>Dados de comunicação</strong> — e-mails, mensagens, ligações</li>
+                <li><strong>Dados biométricos</strong> — face, voz, impressão digital</li>
+                <li><strong>Metadados</strong> — horários, frequências, padrões de uso</li>
+            </ul>
+
+            <h4>LGPD — Lei Geral de Proteção de Dados</h4>
+            <p>Desde 2020, o Brasil conta com a <strong>LGPD</strong> que garante:</p>
+            <ul>
+                <li>Direito de saber quais dados uma empresa possui sobre você</li>
+                <li>Direito de solicitar a exclusão dos seus dados</li>
+                <li>Empresas precisam de consentimento para coletar dados</li>
+                <li>Multas de até 2% do faturamento por violações</li>
+            </ul>
+
+            <h4>Dicas básicas de privacidade</h4>
+            <ul>
+                <li>Revise as permissões dos apps no celular</li>
+                <li>Use navegador com bloqueador de rastreadores</li>
+                <li>Evite redes Wi-Fi públicas sem VPN</li>
+                <li>Leia (pelo menos resumidamente) as políticas de privacidade</li>
+            </ul>
+        </div>
+
+        <div class="mb-5">
+            <button class="conteudo-extra-btn w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtra" aria-expanded="false">
+                <span><i class="bi bi-book me-2" style="color: #0ea5e9;"></i> Conteúdo Extra</span>
+                <i class="bi bi-chevron-down text-muted"></i>
+            </button>
+            <div class="collapse mt-2" id="collapseExtra">
+                <div class="p-3 text-muted" style="background-color: var(--bg-cartao); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    Aqui ficam os materiais complementares em PDF, links e vídeos para aprofundar o tema.
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-end mb-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.05) !important;">
+            <a href="aula2_priv.html" class="btn-proxima">
+                Próxima Aula <i class="bi bi-chevron-right ms-1"></i>
+            </a>
+        </div>
+
+        <div class="comments-section mb-5">
+            <h5 class="fw-bold mb-4 text-white d-flex align-items-center gap-2">
+                <i class="bi bi-chat-left-text" style="color: #0ea5e9;"></i> Comentários (<span id="contador-comentarios">0</span>)
+            </h5>
+            
+            <div class="mb-5">
+                <textarea id="input-comentario" class="comment-input" rows="4" placeholder="Deixe seu comentário ou dúvida..."></textarea>
+                <div class="d-flex justify-content-end mt-3">
+                    <button id="btn-enviar" class="botao-enviar">
+                        <i class="bi bi-send me-2"></i> Enviar
+                    </button>
+                </div>
+            </div>
+
+            <div id="lista-comentarios">
+                <div id="sem-comentarios" class="text-center py-5" style="color: #64748b;">
+                    <i class="bi bi-chat-dots fs-1 mb-3 d-block"></i>
+                    <p>Nenhum comentário ainda. Seja o primeiro!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- =================================================================================================================== -->
+    <!-- LINK GSAP -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <!-- =================================================================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

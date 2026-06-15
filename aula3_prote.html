@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeGuard - Aula 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="safe.css">
+</head>
+<body style="background-color: var(--bg-preto);">
+
+    <div id="nav-container">
+        <a href="SafeGuard.html" class="logo-link">
+            <i id="shield-icon" class="bi bi-shield fs-3"></i>
+            <span class="logo-text">SafeGuard</span>
+        </a>
+        <div class="nav-menu">
+            <a href="SafeGuard.html" class="nav-link">Início</a>
+            <a href="SafeGuard.html#trilhas" class="nav-link">Trilhas</a>
+        </div>
+    </div>
+
+    <div class="container mt-5 pt-4 mb-5" style="max-width: 1300px;">
+        
+        <a href="Protecao.html" class="back-link mb-4 d-inline-flex">
+            <i class="bi bi-arrow-left"></i> Voltar à Trilha
+        </a>
+
+        <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
+            <div style="color: #94a3b8; font-size: 14px;">
+                <i class="bi bi-clock me-1"></i> 10 min de leitura <span class="mx-2">•</span> Aula 3 de 3
+            </div>
+            <button id="btn-marcar-concluido" data-aula="t2_aula3_concluida" class="btn-concluir bg-transparent">
+                <i class="bi bi-circle me-1"></i> Marcar como concluída
+            </button>
+        </div>
+
+        <h1 class="fw-bold mb-4 text-white">Protegendo seus Dispositivos</h1>
+        
+        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+
+        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm" style="border: 1px solid rgba(255,255,255,0.1);">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/lMz50z_9uJE?si=6624VQHOnFlbm5kr" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+
+        <div class="article-content mb-5">
+            <p>Mesmo com uma senha forte, uma camada extra de proteção é essencial. O 2FA adiciona uma segunda verificação ao seu login.</p>
+
+            <h4>Como funciona?</h4>
+            <p>Para acessar sua conta, você precisa de:</p>
+            <ul>
+                <li><strong>Algo que você sabe</strong> — sua senha</li>
+                <li><strong>Algo que você tem</strong> — seu celular, chave de segurança, etc.</li>
+            </ul>
+
+            <h4>Métodos de 2FA</h4>
+            
+            <p class="mb-1"><strong>SMS (menos seguro)</strong></p>
+            <p>Recebe um código por mensagem de texto. Vulnerável a ataques de <strong>SIM Swap</strong>.</p>
+
+            <p class="mb-1 mt-3"><strong>Aplicativo Autenticador (recomendado)</strong></p>
+            <p>Aplicativos como Google Authenticator, Authy ou Microsoft Authenticator geram códigos temporários.</p>
+
+            <p class="mb-1 mt-3"><strong>Chave de Segurança Física (mais seguro)</strong></p>
+            <p>Dispositivos como YubiKey ou Titan Key. Impossível de clonar remotamente.</p>
+
+            <p class="mb-1 mt-3"><strong>Biometria</strong></p>
+            <p>Impressão digital, reconhecimento facial ou de íris.</p>
+
+            <h4>Onde ativar o 2FA?</h4>
+            <p>Priorize estes serviços:</p>
+            
+            <ul style="list-style: none; padding-left: 0;">
+                <li class="mb-1">✅ E-mail principal</li>
+                <li class="mb-1">✅ Banco e serviços financeiros</li>
+                <li class="mb-1">✅ Redes sociais</li>
+                <li class="mb-1">✅ Serviços de nuvem</li>
+                <li class="mb-1">✅ Contas de trabalho</li>
+            </ul>
+
+            <p class="mt-4 text-white"><strong>IMPORTANTE:</strong> Sempre salve os <strong>códigos de recuperação</strong> em um local seguro. Se perder acesso ao 2FA sem eles, pode perder acesso à conta.</p>
+        </div>
+
+        <div class="mb-5">
+            <button class="conteudo-extra-btn w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtra" aria-expanded="false">
+                <span><i class="bi bi-book me-2" style="color: #0ea5e9;"></i> Conteúdo Extra</span>
+                <i class="bi bi-chevron-down text-muted"></i>
+            </button>
+            <div class="collapse mt-2" id="collapseExtra">
+                <div class="p-3 text-muted" style="background-color: var(--bg-cartao); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    Aqui ficam os materiais complementares em PDF, links e vídeos para aprofundar o tema.
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-between mb-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.05) !important;">
+            
+            <a href="aula2_prote.html" class="btn-anterior">
+                <i class="bi bi-chevron-left me-1"></i> Aula Anterior
+            </a>
+            
+        </div>
+
+        <div class="comments-section mb-5">
+            <h5 class="fw-bold mb-4 text-white d-flex align-items-center gap-2">
+                <i class="bi bi-chat-left-text" style="color: #0ea5e9;"></i> Comentários (<span id="contador-comentarios">0</span>)
+            </h5>
+            
+            <div class="mb-5">
+                <textarea id="input-comentario" class="comment-input" rows="4" placeholder="Deixe seu comentário ou dúvida..."></textarea>
+                <div class="d-flex justify-content-end mt-3">
+                    <button id="btn-enviar" class="botao-enviar">
+                        <i class="bi bi-send me-2"></i> Enviar
+                    </button>
+                </div>
+            </div>
+
+            <div id="lista-comentarios">
+                <div id="sem-comentarios" class="text-center py-5" style="color: #64748b;">
+                    <i class="bi bi-chat-dots fs-1 mb-3 d-block"></i>
+                    <p>Nenhum comentário ainda. Seja o primeiro!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- =================================================================================================================== -->
+    <!-- LINK GSAP -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+        integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    </script>
+    <!-- =================================================================================================================== -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
