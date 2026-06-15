@@ -33,19 +33,7 @@ O projeto foi desenvolvido como avaliação prática da disciplina **Mentalidade
 | JavaScript (`script.js`) | Interatividade, contadores e manipulação do DOM |
 | GSAP + ScrollTrigger | Animações de entrada conforme o scroll |
 | Font Awesome 6 / Bootstrap Icons | Ícones vetoriais |
-| GitHub Pages | Hospedagem da página estática |
-
-## Estrutura do Repositório
-```
-SafeGuard/
-├── index.html        # Página inicial
-├── css/
-│   └── safe.css       # Estilos customizados
-├── js/
-│   └── script.js       # Scripts e interatividade
-└── docs/
-    └── SafeGuard_Documentacao.pdf  # Documento de requisitos e decisões de projeto
-```
+| GitHub Pages | Hospedagem da página estática 
 
 ## Documentação
 
