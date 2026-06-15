@@ -28,16 +28,19 @@ O projeto foi desenvolvido como avaliação prática da disciplina **Mentalidade
 
 ## Tecnologias Utilizadas
 | HTML5 | Estruturação semântica das páginas |
+
 | CSS3 / `safe.css` | Estilização customizada (dark mode, glassmorphism, glow, gradientes) |
+
 | Bootstrap 5.3.8 | Sistema de grid responsivo e componentes |
+
 | JavaScript (`script.js`) | Interatividade, contadores e manipulação do DOM |
+
 | GSAP + ScrollTrigger | Animações de entrada conforme o scroll |
+
 | Font Awesome 6 / Bootstrap Icons | Ícones vetoriais |
+
 | GitHub Pages | Hospedagem da página estática 
 
 ## Documentação
 
 O documento completo com as decisões de layout, interface e tecnologias aplicadas está disponível em [`docs/SafeGuard_Documentacao.pdf`](docs/SafeGuard_Documentacao.pdf).
-
-## Autor
-Desenvolvido por **Hillian Gabriel, Enzo Ferreira de Lima, Ivo e Ricardo** como parte da avaliação prática da disciplina Mentalidade Criativa e Empreendedora e Programação Front-End — UniCesumar.
