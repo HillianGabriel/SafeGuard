@@ -567,3 +567,22 @@ body{
 }
 
 /* ==================================== */
+/* ==================================== */
+/* CLASSES UTILITÁRIAS (ex-estilos inline) */
+
+.progress-fill { width: 0; }
+
+.container-wide   { max-width: 1500px; }
+.container-leitura{ max-width: 1300px; }
+.text-meta        { color: #94a3b8; font-size: 14px; }
+.progress-label   { color: #94a3b8; font-weight: 500; font-size: 15px; }
+.aulas-heading    { font-size: 20px; }
+.text-azul        { color: #0ea5e9; }
+.text-vazio       { color: #64748b; }
+.divisor          { border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px; }
+.borda-sutil      { border-color: rgba(255, 255, 255, 0.05) !important; }
+.borda-video      { border: 1px solid rgba(255, 255, 255, 0.1); }
+.caixa-extra      { background-color: var(--bg-cartao); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.05); }
+.lista-limpa      { list-style: none; padding-left: 0; }
+.codigo-inline    { color: #0ea5e9; font-family: monospace; font-size: 17px; display: inline-block; margin: 8px 0; }
+.alerta-aviso     { background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.2); }

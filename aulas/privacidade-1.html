@@ -3,115 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeGuard - Aula 3</title>
+    <title>SafeGuard - Aula 1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="safe.css">
+    <link rel="stylesheet" href="../assets/css/safe.css">
 </head>
-<body style="background-color: var(--bg-preto);">
+<body>
 
     <div id="nav-container">
-        <a href="SafeGuard.html" class="logo-link">
+        <a href="../index.html" class="logo-link">
             <i id="shield-icon" class="bi bi-shield fs-3"></i>
             <span class="logo-text">SafeGuard</span>
         </a>
         <div class="nav-menu">
-            <a href="SafeGuard.html" class="nav-link">Início</a>
-            <a href="SafeGuard.html#trilhas" class="nav-link">Trilhas</a>
+            <a href="../index.html" class="nav-link">Início</a>
+            <a href="../index.html#trilhas" class="nav-link">Trilhas</a>
         </div>
     </div>
 
-    <div class="container mt-5 pt-4 mb-5" style="max-width: 1300px;">
+    <div class="container mt-5 pt-4 mb-5 container-leitura">
         
-        <a href="Fundamentos.html" class="back-link mb-4 d-inline-flex">
+        <a href="../trilhas/privacidade.html" class="back-link mb-4 d-inline-flex">
             <i class="bi bi-arrow-left"></i> Voltar à Trilha
         </a>
 
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
-            <div style="color: #94a3b8; font-size: 14px;">
-                <i class="bi bi-clock me-1"></i> 8 min de leitura <span class="mx-2">•</span> Aula 3 de 3
+            <div class="text-meta">
+                <i class="bi bi-clock me-1"></i> 10 min de leitura <span class="mx-2">•</span> Aula 1 de 2
             </div>
-            <button id="btn-marcar-concluido" data-aula="t1_aula3_concluida" class="btn-concluir bg-transparent">
+            <button id="btn-marcar-concluido" data-aula="t3_aula1_concluida" class="btn-concluir bg-transparent">
                 <i class="bi bi-circle me-1"></i> Marcar como concluída
             </button>
         </div>
 
-        <h1 class="fw-bold mb-4 text-white">Protegendo seus Dispositivos</h1>
+        <h1 class="fw-bold mb-4 text-white">O que é Privacidade Digital?</h1>
         
-        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+        <hr class="divisor">
 
-        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm" style="border: 1px solid rgba(255,255,255,0.1);">
+        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm borda-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/lMz50z_9uJE?si=6624VQHOnFlbm5kr" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+        <hr class="divisor">
 
         <div class="article-content mb-5">
-            <p>Seus dispositivos são a porta de entrada para sua vida digital. Vamos aprender a protegê-los.</p>
+            <h4>O que é Privacidade Digital?</h4>
+            <p>Privacidade digital é o direito de controlar quais informações pessoais você compartilha online e como elas são utilizadas.</p>
 
-            <h4>Mantenha tudo atualizado</h4>
-            <p>Atualizações de software frequentemente corrigem <strong>vulnerabilidades de segurança</strong>. Configure atualizações automáticas sempre que possível:</p>
+            <h4>Seus dados são valiosos</h4>
+            <p>Empresas coletam dados sobre você para:</p>
             <ul>
-                <li>Sistema operacional (Windows, macOS, Linux)</li>
-                <li>Navegadores (Chrome, Firefox, Edge)</li>
-                <li>Aplicativos móveis</li>
-                <li>Firmware de roteadores</li>
+                <li>Direcionar anúncios personalizados</li>
+                <li>Treinar algoritmos de inteligência artificial</li>
+                <li>Vender para terceiros</li>
+                <li>Criar perfis comportamentais</li>
             </ul>
 
-            <h4>Antivírus e Firewall</h4>
-            <p><strong>Antivírus</strong><br>
-            Um bom antivírus oferece proteção em tempo real contra malware. Opções gratuitas confiáveis:</p>
+            <h4>O que é coletado?</h4>
             <ul>
-                <li>Windows Defender (já incluso no Windows)</li>
-                <li>Avast Free</li>
-                <li>Bitdefender Free</li>
+                <li><strong>Dados de navegação</strong> — sites visitados, tempo gasto, cliques</li>
+                <li><strong>Dados de localização</strong> — GPS, Wi-Fi, antenas de celular</li>
+                <li><strong>Dados de comunicação</strong> — e-mails, mensagens, ligações</li>
+                <li><strong>Dados biométricos</strong> — face, voz, impressão digital</li>
+                <li><strong>Metadados</strong> — horários, frequências, padrões de uso</li>
             </ul>
 
-            <p><strong>Firewall</strong><br>
-            O firewall monitora o tráfego de rede, bloqueando conexões suspeitas. Mantenha o firewall do sistema sempre ativado.</p>
-
-            <h4>Criptografia de Disco</h4>
-            <p>Criptografar seu disco rígido protege seus dados em caso de roubo ou perda do dispositivo:</p>
+            <h4>LGPD — Lei Geral de Proteção de Dados</h4>
+            <p>Desde 2020, o Brasil conta com a <strong>LGPD</strong> que garante:</p>
             <ul>
-                <li><strong>Windows:</strong> BitLocker</li>
-                <li><strong>macOS:</strong> FileVault</li>
-                <li><strong>Linux:</strong> LUKS</li>
+                <li>Direito de saber quais dados uma empresa possui sobre você</li>
+                <li>Direito de solicitar a exclusão dos seus dados</li>
+                <li>Empresas precisam de consentimento para coletar dados</li>
+                <li>Multas de até 2% do faturamento por violações</li>
             </ul>
 
-            <h4>Backup Regular</h4>
-            <p>Siga a regra <strong>3-2-1</strong>:</p>
+            <h4>Dicas básicas de privacidade</h4>
             <ul>
-                <li><strong>3</strong> cópias dos dados</li>
-                <li><strong>2</strong> tipos de mídia diferentes</li>
-                <li><strong>1</strong> cópia em local externo (nuvem)</li>
+                <li>Revise as permissões dos apps no celular</li>
+                <li>Use navegador com bloqueador de rastreadores</li>
+                <li>Evite redes Wi-Fi públicas sem VPN</li>
+                <li>Leia (pelo menos resumidamente) as políticas de privacidade</li>
             </ul>
         </div>
 
         <div class="mb-5">
             <button class="conteudo-extra-btn w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtra" aria-expanded="false">
-                <span><i class="bi bi-book me-2" style="color: #0ea5e9;"></i> Conteúdo Extra</span>
+                <span><i class="bi bi-book me-2 text-azul"></i> Conteúdo Extra</span>
                 <i class="bi bi-chevron-down text-muted"></i>
             </button>
             <div class="collapse mt-2" id="collapseExtra">
-                <div class="p-3 text-muted" style="background-color: var(--bg-cartao); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                <div class="p-3 text-muted caixa-extra">
                     Aqui ficam os materiais complementares em PDF, links e vídeos para aprofundar o tema.
                 </div>
             </div>
         </div>
 
-        <div class="d-flex justify-content-between mb-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.05) !important;">
-            
-            <a href="aula2_fund.html" class="btn-anterior">
-                <i class="bi bi-chevron-left me-1"></i> Aula Anterior
+        <div class="d-flex justify-content-end mb-5 pt-4 border-top borda-sutil">
+            <a href="privacidade-2.html" class="btn-proxima">
+                Próxima Aula <i class="bi bi-chevron-right ms-1"></i>
             </a>
-            
         </div>
 
         <div class="comments-section mb-5">
             <h5 class="fw-bold mb-4 text-white d-flex align-items-center gap-2">
-                <i class="bi bi-chat-left-text" style="color: #0ea5e9;"></i> Comentários (<span id="contador-comentarios">0</span>)
+                <i class="bi bi-chat-left-text text-azul"></i> Comentários (<span id="contador-comentarios">0</span>)
             </h5>
             
             <div class="mb-5">
@@ -124,7 +121,7 @@
             </div>
 
             <div id="lista-comentarios">
-                <div id="sem-comentarios" class="text-center py-5" style="color: #64748b;">
+                <div id="sem-comentarios" class="text-center py-5 text-vazio">
                     <i class="bi bi-chat-dots fs-1 mb-3 d-block"></i>
                     <p>Nenhum comentário ainda. Seja o primeiro!</p>
                 </div>
@@ -148,6 +145,6 @@
     </script>
     <!-- =================================================================================================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

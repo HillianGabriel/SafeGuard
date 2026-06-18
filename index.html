@@ -7,82 +7,8 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="safe.css">
-    <style>
-        :root {
-    --bg-darker: #05080f;
-    --bg-dark-custom: #0a0e17;
-    --bg-card: #131a28;
-    --color-cyan: #0ea5e9;
-    --color-green: #10b981;
-}
-
-body {
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    background-color: var(--bg-dark-custom);
-    overflow-x: hidden;
-}
-
-.bg-dark-custom { background-color: var(--bg-dark-custom) !important; }
-.bg-darker { background-color: var(--bg-darker) !important; }
-.bg-card { background-color: var(--bg-card) !important; }
-
-.text-cyan { color: var(--color-cyan) !important; }
-.text-green { color: var(--color-green) !important; }
-.btn-cyan { background-color: var(--color-cyan); border-color: var(--color-cyan); color: #000; }
-.btn-cyan:hover { background-color: #0c8ec8; border-color: #0c8ec8; color: #000; }
-.btn-outline-cyan { border-color: var(--color-cyan); color: var(--color-cyan); background: transparent; }
-.btn-outline-cyan:hover { background-color: var(--color-cyan); color: #0a0e17; }
-.text-hover-cyan:hover { color: var(--color-cyan) !important; transition: 0.3s; }
-.text-hover-white:hover { color: #fff !important; transition: 0.3s; }
-
-.text-gradient {
-    background: linear-gradient(90deg, var(--color-cyan), var(--color-green));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.bg-gradient-cyan {
-    background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-green) 100%);
-}
-.bg-glass {
-    background-color: rgba(10, 14, 23, 0.85) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
-.max-w-700 { max-width: 700px; }
-
-.feature-card, .track-card, .testimonial-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.feature-card:hover, .track-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(14, 165, 233, 0.3) !important;
-    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
-}
-
-.cyber-orb {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: radial-gradient(circle, rgba(14,165,233,0.1) 0%, rgba(10,14,23,0) 70%);
-    border: 1px solid rgba(14, 165, 233, 0.2);
-    box-shadow: 0 0 50px rgba(14, 165, 233, 0.2), inset 0 0 30px rgba(16, 185, 129, 0.1);
-    position: relative;
-    animation: pulseOrb 4s infinite alternate ease-in-out;
-}
-
-.drop-shadow-cyan {
-    filter: drop-shadow(0 0 15px rgba(14, 165, 233, 0.8));
-}
-
-@keyframes pulseOrb {
-    0% { transform: scale(1); box-shadow: 0 0 40px rgba(14, 165, 233, 0.1); }
-    100% { transform: scale(1.05); box-shadow: 0 0 80px rgba(14, 165, 233, 0.3); border-color: rgba(16, 185, 129, 0.4); }
-}
-    </style>
+    <link rel="stylesheet" href="assets/css/safe.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body class="bg-dark-custom text-white">
 
@@ -197,7 +123,7 @@ body {
                         <i class="fa-solid fa-shield text-cyan fs-1 mb-3"></i>
                         <h4 class="fw-bold">Fundamentos da Segurança Digital</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Aprenda os conceitos básicos, ameaças comuns e práticas diárias para proteger dispositivos e dados pessoais.</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/fundamentos.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -205,7 +131,7 @@ body {
                         <i class="fa-solid fa-key text-green fs-1 mb-3"></i>
                         <h4 class="fw-bold">Senhas e Autenticação</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Domine gerenciadores de senhas, criação de passphrases fortes e implementação de Autenticação em Duas Etapas (2FA).</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/protecao.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -213,7 +139,7 @@ body {
                         <i class="fa-solid fa-user-secret text-cyan fs-1 mb-3"></i>
                         <h4 class="fw-bold">Engenharia Social e Phishing</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Descubra como os hackers manipulam a mente humana. Aprenda a identificar e evitar ataques de phishing, smishing e mais.</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/engenharia.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -221,7 +147,7 @@ body {
                         <i class="fa-solid fa-eye-slash text-green fs-1 mb-3"></i>
                         <h4 class="fw-bold">Privacidade e Proteção de Dados</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Retome o controle da sua identidade online. Entenda o que empresas sabem sobre você e como configurar sua privacidade.</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/privacidade.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -229,7 +155,7 @@ body {
                         <i class="fa-solid fa-network-wired text-cyan fs-1 mb-3"></i>
                         <h4 class="fw-bold">Segurança em Redes e Wi-Fi</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Proteja seu Wi-Fi doméstico, entenda os perigos de redes públicas e aprenda quando e como utilizar uma VPN.</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/seguranca-redes.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -237,7 +163,7 @@ body {
                         <i class="fa-solid fa-laptop-code text-green fs-1 mb-3"></i>
                         <h4 class="fw-bold">Intro à Cibersegurança</h4>
                         <p class="text-secondary mb-4 flex-grow-1">Quer seguir carreira? Um panorama sobre ferramentas profissionais, análise de sistemas e modelagem de software.</p>
-                        <a href="#" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
+                        <a href="trilhas/seguranca-devs.html" class="btn btn-outline-cyan w-100 rounded-pill">Acessar Trilha <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -278,7 +204,7 @@ body {
                         <i class="fa-solid fa-quote-left fs-1 text-cyan text-opacity-25 position-absolute top-0 start-0 mt-3 ms-3"></i>
                         <p class="text-secondary mb-4 mt-3 position-relative z-1">"A metodologia gamificada transformou a forma como eu encaro a segurança digital. Deixou de ser um bicho de sete cabeças e virou algo prático e viciante."</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="bg-secondary rounded-circle" style="width: 50px; height: 50px; background-image: url('https://i.pravatar.cc/100?img=11'); background-size: cover;"></div>
+                            <div class="bg-secondary rounded-circle testimonial-avatar avatar-1"></div>
                             <div>
                                 <h6 class="fw-bold mb-0 text-white">Carlos E.</h6>
                                 <small class="text-cyan">Desenvolvedor Jr.</small>
@@ -291,7 +217,7 @@ body {
                         <i class="fa-solid fa-quote-left fs-1 text-green text-opacity-25 position-absolute top-0 start-0 mt-3 ms-3"></i>
                         <p class="text-secondary mb-4 mt-3 position-relative z-1">"Eu caía em muito golpe de internet. Com a trilha de Engenharia Social, aprendi a identificar e-mails de phishing na mesma hora. Excelente plataforma!"</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="bg-secondary rounded-circle" style="width: 50px; height: 50px; background-image: url('https://i.pravatar.cc/100?img=5'); background-size: cover;"></div>
+                            <div class="bg-secondary rounded-circle testimonial-avatar avatar-2"></div>
                             <div>
                                 <h6 class="fw-bold mb-0 text-white">Mariana S.</h6>
                                 <small class="text-green">Comerciante</small>
@@ -304,7 +230,7 @@ body {
                         <i class="fa-solid fa-quote-left fs-1 text-cyan text-opacity-25 position-absolute top-0 start-0 mt-3 ms-3"></i>
                         <p class="text-secondary mb-4 mt-3 position-relative z-1">"A plataforma é super intuitiva. As trilhas têm um fluxo perfeito, te levando do básico ao intermediário sem você nem perceber. Recomendo muito!"</p>
                         <div class="d-flex align-items-center gap-3">
-                            <div class="bg-secondary rounded-circle" style="width: 50px; height: 50px; background-image: url('https://i.pravatar.cc/100?img=33'); background-size: cover;"></div>
+                            <div class="bg-secondary rounded-circle testimonial-avatar avatar-3"></div>
                             <div>
                                 <h6 class="fw-bold mb-0 text-white">Rafael T.</h6>
                                 <small class="text-cyan">Analista de Sistemas</small>
@@ -322,7 +248,7 @@ body {
                 <div class="position-relative z-1">
                     <h2 class="display-5 fw-bolder text-dark mb-3">Pronto para blindar sua navegação?</h2>
                     <p class="text-dark fs-5 mb-4 opacity-75 max-w-700 mx-auto">Junte-se a milhares de alunos que já assumiram o controle da sua segurança digital através do nosso ecossistema.</p>
-                    <a href="#" class="btn btn-dark btn-lg rounded-pill px-5 py-3 fw-bold shadow">Criar Conta Gratuita</a>
+                    <a href="#trilhas" class="btn btn-dark btn-lg rounded-pill px-5 py-3 fw-bold shadow">Criar Conta Gratuita</a>
                 </div>
             </div>
         </div>
@@ -346,7 +272,7 @@ body {
                 <div class="col-6 col-lg-2">
                     <h6 class="text-white fw-bold mb-3">Plataforma</h6>
                     <ul class="list-unstyled d-flex flex-column gap-2 small">
-                        <li><a href="#" class="text-secondary text-decoration-none text-hover-white">Trilhas</a></li>
+                        <li><a href="#trilhas" class="text-secondary text-decoration-none text-hover-white">Trilhas</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none text-hover-white">Metodologia</a></li>
                         <li><a href="#" class="text-secondary text-decoration-none text-hover-white">Certificados</a></li>
                     </ul>
@@ -378,91 +304,7 @@ body {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        gsap.registerPlugin(ScrollTrigger);
-
-        document.addEventListener('DOMContentLoaded', () => {
-
-        const tlHero = gsap.timeline();
-
-        tlHero.fromTo(".navbar", 
-            { y: -100, opacity: 0 }, 
-            { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
-        )
-        .fromTo(".hero-text-box > *", 
-            { x: -50, opacity: 0 }, 
-            { x: 0, opacity: 1, duration: 0.8, stagger: 0.15, ease: "power2.out" },
-            "-=0.5"
-        )
-        .fromTo(".hero-img-box", 
-            { scale: 0.8, opacity: 0, rotation: -10 }, 
-            { scale: 1, opacity: 1, rotation: 0, duration: 1.2, ease: "back.out(1.2)" },
-            "-=0.8"
-        );
-
-        gsap.utils.toArray('.section-header').forEach(header => {
-            gsap.fromTo(header, 
-                { y: 40, opacity: 0 },
-                {
-                    scrollTrigger: { trigger: header, start: "top 85%" },
-                    y: 0, opacity: 1, duration: 0.8, ease: "power2.out"
-                }
-            );
-        });
-
-        const animateCards = (selector) => {
-            const cards = document.querySelectorAll(selector);
-            if(cards.length > 0) {
-                gsap.fromTo(cards, 
-                    { y: 50, opacity: 0 },
-                    {
-                        scrollTrigger: { trigger: cards[0], start: "top 85%" },
-                        y: 0, opacity: 1, duration: 0.6, stagger: 0.15, ease: "power2.out", clearProps: "all"
-                    }
-                );
-            }
-        };
-        
-        
-        animateCards('.feature-card');
-        animateCards('.track-card');
-        animateCards('.testimonial-card');
-
-        const counters = document.querySelectorAll('.counter');
-        if (counters.length > 0) {
-            ScrollTrigger.create({
-                trigger: "#estatisticas",
-                start: "top 85%",
-                onEnter: () => {
-                    counters.forEach(counter => {
-                        const targetValue = parseInt(counter.getAttribute('data-target'));
-                        
-                        let contagem = { val: 0 };
-                        gsap.to(contagem, {
-                            val: targetValue,
-                            duration: 2.5,
-                            ease: "power2.out",
-                            onUpdate: function() {
-                                counter.innerHTML = Math.floor(this.targets()[0].val).toLocaleString('pt-BR');
-                            }
-                        });
-                    });
-                },
-                once: true 
-            });
-        }
-
-        if(document.querySelector('.cta-section')) {
-            gsap.fromTo('.cta-section .bg-gradient-cyan',
-                { scale: 0.95, opacity: 0 },
-                {
-                    scrollTrigger: { trigger: '.cta-section', start: "top 85%" },
-                    scale: 1, opacity: 1, duration: 0.8, ease: "back.out(1.5)", clearProps: "all"
-                }
-            );
-        }
-    });
-    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/home.js"></script>
 </body>
 </html>

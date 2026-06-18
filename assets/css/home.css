@@ -1,0 +1,79 @@
+:root {
+    --bg-darker: #05080f;
+    --bg-dark-custom: #0a0e17;
+    --bg-card: #131a28;
+    --color-cyan: #0ea5e9;
+    --color-green: #10b981;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-dark-custom);
+    overflow-x: hidden;
+}
+
+.bg-dark-custom { background-color: var(--bg-dark-custom) !important; }
+.bg-darker { background-color: var(--bg-darker) !important; }
+.bg-card { background-color: var(--bg-card) !important; }
+
+.text-cyan { color: var(--color-cyan) !important; }
+.text-green { color: var(--color-green) !important; }
+.btn-cyan { background-color: var(--color-cyan); border-color: var(--color-cyan); color: #000; }
+.btn-cyan:hover { background-color: #0c8ec8; border-color: #0c8ec8; color: #000; }
+.btn-outline-cyan { border-color: var(--color-cyan); color: var(--color-cyan); background: transparent; }
+.btn-outline-cyan:hover { background-color: var(--color-cyan); color: #0a0e17; }
+.text-hover-cyan:hover { color: var(--color-cyan) !important; transition: 0.3s; }
+.text-hover-white:hover { color: #fff !important; transition: 0.3s; }
+
+.text-gradient {
+    background: linear-gradient(90deg, var(--color-cyan), var(--color-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bg-gradient-cyan {
+    background: linear-gradient(135deg, var(--color-cyan) 0%, var(--color-green) 100%);
+}
+.bg-glass {
+    background-color: rgba(10, 14, 23, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+.py-6 { padding-top: 5rem; padding-bottom: 5rem; }
+.max-w-700 { max-width: 700px; }
+
+.feature-card, .track-card, .testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover, .track-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(14, 165, 233, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(14, 165, 233, 0.1);
+}
+
+.cyber-orb {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(14,165,233,0.1) 0%, rgba(10,14,23,0) 70%);
+    border: 1px solid rgba(14, 165, 233, 0.2);
+    box-shadow: 0 0 50px rgba(14, 165, 233, 0.2), inset 0 0 30px rgba(16, 185, 129, 0.1);
+    position: relative;
+    animation: pulseOrb 4s infinite alternate ease-in-out;
+}
+
+.drop-shadow-cyan {
+    filter: drop-shadow(0 0 15px rgba(14, 165, 233, 0.8));
+}
+
+@keyframes pulseOrb {
+    0% { transform: scale(1); box-shadow: 0 0 40px rgba(14, 165, 233, 0.1); }
+    100% { transform: scale(1.05); box-shadow: 0 0 80px rgba(14, 165, 233, 0.3); border-color: rgba(16, 185, 129, 0.4); }
+}
+
+/* Avatares dos depoimentos (ex-estilos inline) */
+.testimonial-avatar { width: 50px; height: 50px; background-size: cover; }
+.avatar-1 { background-image: url('https://i.pravatar.cc/100?img=11'); }
+.avatar-2 { background-image: url('https://i.pravatar.cc/100?img=5'); }
+.avatar-3 { background-image: url('https://i.pravatar.cc/100?img=33'); }

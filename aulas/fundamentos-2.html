@@ -6,110 +6,102 @@
     <title>SafeGuard - Aula 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="safe.css">
+    <link rel="stylesheet" href="../assets/css/safe.css">
 </head>
-<body style="background-color: var(--bg-preto);">
+<body>
 
     <div id="nav-container">
-        <a href="SafeGuard.html" class="logo-link">
+        <a href="../index.html" class="logo-link">
             <i id="shield-icon" class="bi bi-shield fs-3"></i>
             <span class="logo-text">SafeGuard</span>
         </a>
         <div class="nav-menu">
-            <a href="SafeGuard.html" class="nav-link">Início</a>
-            <a href="SafeGuard.html#trilhas" class="nav-link">Trilhas</a>
+            <a href="../index.html" class="nav-link">Início</a>
+            <a href="../index.html#trilhas" class="nav-link">Trilhas</a>
         </div>
     </div>
 
-    <div class="container mt-5 pt-4 mb-5" style="max-width: 1300px;">
+    <div class="container mt-5 pt-4 mb-5 container-leitura">
         
-        <a href="Privacidade.html" class="back-link mb-4 d-inline-flex">
+        <a href="../trilhas/fundamentos.html" class="back-link mb-4 d-inline-flex">
             <i class="bi bi-arrow-left"></i> Voltar à Trilha
         </a>
 
         <div class="d-flex justify-content-between align-items-center mb-4 pb-2">
-            <div style="color: #94a3b8; font-size: 14px;">
-                <i class="bi bi-clock me-1"></i> 12 min de leitura <span class="mx-2">•</span> Aula 2 de 2
+            <div class="text-meta">
+                <i class="bi bi-clock me-1"></i> 8 min de leitura <span class="mx-2">•</span> Aula 2 de 3
             </div>
-            <button id="btn-marcar-concluido" data-aula="t3_aula2_concluida" class="btn-concluir bg-transparent">
+            <button id="btn-marcar-concluido" data-aula="t1_aula2_concluida" class="btn-concluir bg-transparent">
                 <i class="bi bi-circle me-1"></i> Marcar como concluída
             </button>
         </div>
 
-        <h1 class="fw-bold mb-4 text-white">Navegação Segura e VPNs</h1>
+        <h1 class="fw-bold mb-4 text-white">Tipos de Ameaças Digitais</h1>
         
-        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+        <hr class="divisor">
 
-        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm" style="border: 1px solid rgba(255,255,255,0.1);">
+        <div class="video-container mb-5 ratio ratio-16x9 rounded-3 overflow-hidden shadow-sm borda-video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/lMz50z_9uJE?si=6624VQHOnFlbm5kr" title="YouTube video player" 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
-        <hr style="border-color: rgba(255, 255, 255, 0.3); margin-bottom: 30px;">
+        <hr class="divisor">
 
         <div class="article-content mb-5">
-            <p>Cada vez que você navega na internet, deixa rastros. Aprenda a minimizar essa exposição.</p>
+            <p>Conhecer as ameaças é o primeiro passo para se proteger. Vamos explorar os tipos mais comuns de ataques cibernéticos.</p>
 
-            <h4>Navegação privada vs Navegação anônima</h4>
-            <p>O <strong>Modo anônimo do navegador</strong> apenas evita que o histórico seja salvo localmente. Seu provedor de internet e os sites ainda podem ver sua atividade.</p>
-            <p>Para <strong>verdadeira privacidade</strong>, você precisa de mais ferramentas.</p>
-
-            <h4>O que é uma VPN?</h4>
-            <p>Uma <strong>VPN (Virtual Private Network)</strong> cria um túnel criptografado entre seu dispositivo e a internet:</p>
+            <h4>Malware</h4>
+            <p>Malware é um termo genérico para software malicioso. Inclui:</p>
             <ul>
-                <li>Seu provedor não vê o que você acessa</li>
-                <li>Sites não veem seu IP real</li>
-                <li>Dados ficam protegidos em redes públicas</li>
+                <li><strong>Vírus:</strong> Programas que se replicam e se espalham para outros arquivos. Precisam de um hospedeiro para funcionar.</li>
+                <li><strong>Ransomware:</strong> Bloqueia o acesso aos seus dados e exige pagamento (resgate) para liberá-los. Um dos ataques mais devastadores atualmente.</li>
+                <li><strong>Trojan (Cavalo de Tróia):</strong> Se disfarça como software legítimo, mas executa ações maliciosas em segundo plano.</li>
+                <li><strong>Spyware:</strong> Monitora suas atividades sem seu conhecimento, coletando dados como senhas e histórico de navegação.</li>
             </ul>
 
-            <h4>Escolhendo uma VPN</h4>
-            <p>O que procurar:</p>
+            <h4>Ataques de Rede</h4>
             <ul>
-                <li>Política de <strong>no-logs</strong> (não registra sua atividade)</li>
-                <li>Criptografia <strong>AES-256</strong></li>
-                <li>Servidores em múltiplos países</li>
-                <li>Kill switch (corta a internet se a VPN cair)</li>
+                <li><strong>Man-in-the-Middle (MitM)</strong> — O atacante intercepta comunicações entre duas partes.</li>
+                <li><strong>DDoS</strong> — Sobrecarrega um servidor com tráfego falso, tornando-o inacessível.</li>
+                <li><strong>DNS Spoofing</strong> — Redireciona seu tráfego para sites falsos.</li>
             </ul>
 
-            <p>VPNs recomendadas:</p>
+            <h4>Engenharia Social</h4>
+            <p>Manipulação psicológica para enganar pessoas e fazê-las revelar informações confidenciais:</p>
             <ul>
-                <li><strong>ProtonVPN</strong> — versão gratuita confiável</li>
-                <li><strong>Mullvad</strong> — aceita pagamento anônimo</li>
-                <li><strong>NordVPN</strong> — boa velocidade e cobertura</li>
+                <li><strong>Phishing</strong> — E-mails falsos imitando empresas legítimas.</li>
+                <li><strong>Vishing</strong> — Phishing por telefone.</li>
+                <li><strong>Smishing</strong> — Phishing por SMS.</li>
+                <li><strong>Pretexting</strong> — Criação de cenários falsos para obter informações.</li>
             </ul>
-
-            <h4>Navegador Tor</h4>
-            <p>Para máxima anonimidade, o <strong>Tor Browser</strong> roteia seu tráfego por múltiplos servidores voluntários ao redor do mundo, tornando praticamente impossível rastrear sua atividade.</p>
-            
-            <p class="mt-4 p-3 rounded" style="background-color: rgba(245, 158, 11, 0.1); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.2);">
-                ⚠️ O Tor é mais lento que uma VPN convencional, ideal para quando a privacidade é prioridade máxima.
-            </p>
         </div>
 
         <div class="mb-5">
             <button class="conteudo-extra-btn w-100" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExtra" aria-expanded="false">
-                <span><i class="bi bi-book me-2" style="color: #0ea5e9;"></i> Conteúdo Extra</span>
+                <span><i class="bi bi-book me-2 text-azul"></i> Conteúdo Extra</span>
                 <i class="bi bi-chevron-down text-muted"></i>
             </button>
             <div class="collapse mt-2" id="collapseExtra">
-                <div class="p-3 text-muted" style="background-color: var(--bg-cartao); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                <div class="p-3 text-muted caixa-extra">
                     Aqui ficam os materiais complementares em PDF, links e vídeos para aprofundar o tema.
                 </div>
             </div>
         </div>
 
-        <div class="d-flex justify-content-between mb-5 pt-4 border-top" style="border-color: rgba(255,255,255,0.05) !important;">
-            
-            <a href="aula1_priv.html" class="btn-anterior">
+        <div class="d-flex justify-content-end mb-5 pt-4 border-top borda-sutil">
+            <a href="fundamentos-1.html" class="btn-anterior">
                 <i class="bi bi-chevron-left me-1"></i> Aula Anterior
             </a>
-            
+
+            <a href="fundamentos-3.html" class="btn-proxima">
+                Próxima Aula <i class="bi bi-chevron-right ms-1"></i>
+            </a>
         </div>
 
         <div class="comments-section mb-5">
             <h5 class="fw-bold mb-4 text-white d-flex align-items-center gap-2">
-                <i class="bi bi-chat-left-text" style="color: #0ea5e9;"></i> Comentários (<span id="contador-comentarios">0</span>)
+                <i class="bi bi-chat-left-text text-azul"></i> Comentários (<span id="contador-comentarios">0</span>)
             </h5>
             
             <div class="mb-5">
@@ -122,7 +114,7 @@
             </div>
 
             <div id="lista-comentarios">
-                <div id="sem-comentarios" class="text-center py-5" style="color: #64748b;">
+                <div id="sem-comentarios" class="text-center py-5 text-vazio">
                     <i class="bi bi-chat-dots fs-1 mb-3 d-block"></i>
                     <p>Nenhum comentário ainda. Seja o primeiro!</p>
                 </div>
@@ -146,6 +138,6 @@
     </script>
     <!-- =================================================================================================================== -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
